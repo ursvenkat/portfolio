@@ -108,21 +108,9 @@ nav ul a:focus-visible{outline:2px solid var(--amber); outline-offset:4px;}
 /* ---------- HERO ---------- */
 header.hero{
   position:relative;
-}
-header.hero::before{
-   content:"";
-  position:absolute;inset:0;
-  background:
-   radial-gradient(
-    circle at 20% 30%,
-    rgba(37,99,235,.15),
-    transparent 35% ,
-   radial-gradient(
-    circle at 80% 40%,
-    rgba(14,165,233,.10),
-    transparent 35%
-  );
- pointer-events:none;
+  min-height:100vh;
+  display:flex; flex-direction:column; justify-content:center;
+  padding:110px 0 0;
 }
 .hero-inner{
   position:relative; z-index:2;
