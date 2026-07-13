@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Venkatesh Patte — Full Stack Developer &amp; Workflow Automation Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="brand">
+    <img src="assets/avatar.jpg" alt="Venkatesh Patte avatar">
+    <div class="mark">V.PATTE<span>_</span>DEV</div>
+  </div>
+  <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">MENU</button>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="hero bp-grid">
+  <div class="bubbles" aria-hidden="true">
+    <div class="bubble b1"></div>
+    <div class="bubble b2"></div>
+    <div class="bubble b3"></div>
+    <div class="bubble b4"></div>
+    <div class="bubble b5"></div>
+  </div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <div class="photo-card">
+        <div class="frame">
+          <img src="assets/profile.jpg" alt="Portrait of Venkatesh Patte">
+        </div>
+        <div class="photo-cap"><span>Fig. 01</span><span>Hyderabad, IN</span></div>
+      </div>
+
+      <div>
+        <p class="eyebrow">Sheet 01 — Profile</p>
+        <h1>VENKATESH<br>PATTE<small>Full Stack Developer &amp; Workflow Automation Engineer</small></h1>
+        <p class="lede">3+ years building and supporting enterprise systems — REST APIs and microservices at Wipro on the FedEx account, now leading n8n automation and SAP-to-PostgreSQL data migration at Kintetsu World Express.</p>
+        <div class="cta-row">
+          <a class="btn btn-solid" href="#experience">See experience</a>
+          <a class="btn btn-line" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="pipeline-box">
+        <div class="cap"><span>Live diagram</span><span>DMFW · SAP → PG</span></div>
+        <svg class="pipeline" viewBox="0 0 320 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram of a data pipeline flowing from SAP source through extraction, staging, transform, and posting into PostgreSQL">
+          <g class="pl-node"><rect x="6" y="14" width="86" height="34" rx="1"/><text x="49" y="30" text-anchor="middle">SAP SOURCE</text><text class="sub" x="49" y="42" text-anchor="middle">yacsf_rrhd · rlin</text></g>
+          <g class="pl-node"><rect x="118" y="14" width="86" height="34" rx="1"/><text x="161" y="30" text-anchor="middle">EXTRACT</text><text class="sub" x="161" y="42" text-anchor="middle">CTE chain SQL</text></g>
+          <g class="pl-node"><rect x="230" y="14" width="86" height="34" rx="1"/><text x="273" y="30" text-anchor="middle">STAGE</text><text class="sub" x="273" y="42" text-anchor="middle">A / B series</text></g>
+
+          <g class="pl-node active"><rect x="6" y="130" width="86" height="34" rx="1"/><text x="49" y="146" text-anchor="middle">PAR NODE</text><text class="sub" x="49" y="158" text-anchor="middle">bulk‑fetch + JS</text></g>
+          <g class="pl-node"><rect x="118" y="130" width="86" height="34" rx="1"/><text x="161" y="146" text-anchor="middle">TRANSFORM</text><text class="sub" x="161" y="158" text-anchor="middle">pure‑JS prepare</text></g>
+          <g class="pl-node"><rect x="230" y="130" width="86" height="34" rx="1"/><text x="273" y="146" text-anchor="middle">POSTGRESQL</text><text class="sub" x="273" y="158" text-anchor="middle">6 prod tables</text></g>
+
+          <path class="pl-path" d="M92,31 H118"/>
+          <path class="pl-path" d="M204,31 H230"/>
+          <path class="pl-path" d="M273,48 V96 Q273,104 265,104 H57 Q49,104 49,112 V130" />
+          <path class="pl-path" d="M92,147 H118"/>
+          <path class="pl-path" d="M204,147 H230"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="titleblock">
+      <div><p class="k">Name</p><p class="v">Venkatesh Patte</p></div>
+      <div><p class="k">Role</p><p class="v">Full Stack / Automation</p></div>
+      <div><p class="k">Experience</p><p class="v">3+ years</p></div>
+      <div><p class="k">Sheet No.</p><p class="v">01 of 06</p></div>
+      <div><p class="k">Rev.</p><p class="v">2026.07</p></div>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="paper">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <p class="eyebrow">Sheet 02 — Elevation</p>
+      <h2 class="section-title">About</h2>
+    </div>
+    <div class="about-grid">
+      <div>
+        <p>I'm a full stack developer with three-plus years of experience designing, building, and supporting enterprise web applications — most of it spent inside Wipro's FedEx account, where I built REST APIs and microservices and kept production systems running under SLA.</p>
+        <p>Today I work on iHub, a logistics automation platform built for APL Logistics inside Kintetsu World Express. I lead a data migration framework called DMFW that moves invoice and shipment records out of SAP and into PostgreSQL correctly — staged, idempotent, and auditable — and I build the n8n workflows that keep freight and invoice data moving without anyone babysitting them.</p>
+        <p>My foundation is Java and Spring Boot, sharpened over years of production support where root-cause analysis and clean incident response mattered as much as writing the code in the first place. I've since built outward into JavaScript, Python, and workflow automation tooling, while keeping that same backend discipline: correct before clever.</p>
+      </div>
+      <dl class="spec-list">
+        <dt>Current focus</dt><dd>n8n automation &amp; SAP-to-PostgreSQL data migration</dd>
+        <dt>Background</dt><dd>3+ years full stack development &amp; production support at Wipro</dd>
+        <dt>Core</dt><dd>Java, Spring Boot, Microservices, REST APIs</dd>
+        <dt>Education</dt><dd>B.E., Computer Science Engineering — Muthayammal Engineering College, Anna University</dd>
+        <dt>Certification</dt><dd>GitHub Copilot — Technical Level 3, Wipro Cloud &amp; AI Academy</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <p class="eyebrow">Sheet 03 — Legend</p>
+      <h2 class="section-title">Skills key</h2>
+    </div>
+    <div class="legend">
+      <div class="legend-group">
+        <h3>Languages</h3>
+        <ul>
+          <li>Java</li><li>JavaScript</li><li>Python</li><li>SQL</li>
+        </ul>
+      </div>
+      <div class="legend-group">
+        <h3>Frameworks &amp; Frontend</h3>
+        <ul>
+          <li>Spring Boot</li><li>Microservices &amp; REST APIs</li><li>Angular</li><li>HTML / CSS</li>
+        </ul>
+      </div>
+      <div class="legend-group">
+        <h3>Automation &amp; Data</h3>
+        <ul>
+          <li>n8n workflow design</li><li>PostgreSQL, MySQL, Oracle</li><li>SAP source extraction &amp; staging</li><li>pandas / NumPy</li>
+        </ul>
+      </div>
+      <div class="legend-group">
+        <h3>Tooling &amp; Ops</h3>
+        <ul>
+          <li>Azure DevOps CI/CD, Jenkins</li><li>PCF, AWS, Docker</li><li>Swagger, JUnit, Insomnia</li><li>Git / GitHub, Agile / Scrum</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="paper">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <p class="eyebrow">Sheet 04 — Route</p>
+      <h2 class="section-title">Experience</h2>
+    </div>
+    <div class="route">
+      <div class="stop">
+        <p class="when">Current</p>
+        <h3>Kintetsu World Express — iHub for APL Logistics</h3>
+        <p class="role-sub">Backend &amp; Workflow Automation Engineer</p>
+        <ul>
+          <li>Lead DMFW, a data migration framework moving invoice and shipment records from SAP into PostgreSQL through staged, idempotent, auditable pipelines.</li>
+          <li>Design and maintain n8n workflows for freight and invoice data movement, including AI-assisted matching and real-time alerting.</li>
+          <li>Manage CI/CD pipelines for n8n infrastructure through Azure DevOps.</li>
+        </ul>
+        <div class="stack-row">
+          <span class="tag">n8n</span><span class="tag">PostgreSQL</span><span class="tag">Azure DevOps</span><span class="tag">SAP</span>
+        </div>
+      </div>
+
+      <div class="stop">
+        <p class="when">Apr 2022 – Apr 2025</p>
+        <h3>Wipro Limited</h3>
+        <p class="role-sub">Project Engineer — Backend Developer, FedEx Account (Purple &amp; Platinum Project)</p>
+        <ul>
+          <li>Built and deployed RESTful APIs and microservices supporting logistics applications, with Swagger UI for documentation and testing.</li>
+          <li>Automated CI/CD pipelines in Jenkins and configured PCF for cloud deployment and environment management.</li>
+          <li>Provided production support for live logistics applications — log analysis, incident management, and root-cause fixes within SLA timelines.</li>
+          <li>Collaborated with DevOps and QA teams to ship hotfixes and patches, and ran unit testing with JUnit across Agile sprints.</li>
+        </ul>
+        <div class="stack-row">
+          <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Jenkins</span><span class="tag">PCF</span><span class="tag">MySQL</span>
+        </div>
+      </div>
+
+      <div class="stop">
+        <p class="when">Education</p>
+        <h3>Muthayammal Engineering College, Anna University</h3>
+        <p class="role-sub">B.E., Computer Science Engineering</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <p class="eyebrow">Sheet 05 — Assembly</p>
+      <h2 class="section-title">Selected work</h2>
+    </div>
+
+    <div class="sheets">
+      <div class="sheet">
+        <div class="sheet-body">
+          <h3>n8n Workflow Automation Portfolio</h3>
+          <p>A growing collection of production-quality n8n workflows — invoice processing, alerting, and AI-assisted matching — documented like real deliverables, not demos.</p>
+          <div class="tag-row">
+            <span class="tag-alt">n8n</span><span class="tag-alt">PostgreSQL</span><span class="tag-alt">Automation</span>
+          </div>
+        </div>
+        <div class="sheet-foot"><a href="#" target="_blank" rel="noopener">GitHub ↗</a><span>Edit link</span></div>
+      </div>
+
+      <div class="sheet">
+        <div class="sheet-body">
+          <h3>shipment-gateway</h3>
+          <p>A Spring Boot REST API for shipment data — clean layered architecture, proper validation and error handling, built to look like something a logistics team could actually run.</p>
+          <div class="tag-row">
+            <span class="tag-alt">Java</span><span class="tag-alt">Spring Boot</span><span class="tag-alt">REST</span>
+          </div>
+        </div>
+        <div class="sheet-foot"><a href="#" target="_blank" rel="noopener">GitHub ↗</a><span>Edit link</span></div>
+      </div>
+
+      <div class="sheet">
+        <div class="sheet-body">
+          <h3>Third build</h3>
+          <p>A non-n8n project rounding out the portfolio — details to be filled in as it ships.</p>
+          <div class="tag-row"><span class="tag-alt">TBD</span></div>
+        </div>
+        <div class="sheet-foot"><span class="stamp">IN PROGRESS</span><span>Edit link</span></div>
+      </div>
+    </div>
+
+    <div class="feature">
+      <p class="eyebrow">Featured build</p>
+      <h3 style="font-family:var(--mono); font-size:21px; color:var(--ink); margin-top:8px;">YINCIO001 — Invoice Migration Pipeline</h3>
+      <p style="max-width:70ch; color:#3F4E5C; margin-top:10px; font-size:14px;">The centerpiece of my DMFW work: an SAP-to-PostgreSQL migration for invoice data. It extracts through a chain of CTEs, stages records idempotently, and posts atomically into six production tables — currently being refactored so the posting node fetches in bulk and prepares data in pure JavaScript, instead of hitting the database once per invoice.</p>
+      <div class="feature-steps">
+        <div><p class="n">01</p><p>Extract from SAP source tables via CTE chains</p></div>
+        <div><p class="n">02</p><p>Stage into A/B-series tables with idempotency guards</p></div>
+        <div><p class="n">03</p><p>Bulk-fetch and prepare in pure JS — no per-row round trips</p></div>
+        <div><p class="n">04</p><p>Post atomically across 6 production tables</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="bp-grid">
+  <div class="bubbles" aria-hidden="true">
+    <div class="bubble b2" style="left:8%; right:auto; top:-40px;"></div>
+    <div class="bubble b4" style="right:-60px; bottom:-80px;"></div>
+  </div>
+  <div class="wrap reveal">
+    <div class="contact-node">
+      <img class="avatar" src="assets/avatar.jpg" alt="Venkatesh Patte">
+      <p class="eyebrow">Sheet 06 — Terminus</p>
+      <h2>Let's connect the next node</h2>
+      <p>Open to conversations about full stack development, workflow automation, or data migration work. Reach out below.</p>
+      <div class="contact-links">
+        <a class="btn btn-solid" href="mailto:pattevenkatesh@gmail.com">Email me</a>
+        <a class="btn btn-line" href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-line" href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <div class="contact-meta">
+        <div><span>Email —</span> pattevenkatesh@gmail.com</div>
+        <div><span>Phone —</span> +91 70758 09349</div>
+        <div><span>Based in —</span> Hyderabad, India</div>
+      </div>
+      <p class="note">Swap the LinkedIn and GitHub placeholders above for your real profile links.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  DESIGNED &amp; BUILT BY VENKATESH PATTE · REV 2026.07 · ALL SYSTEMS NOMINAL
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
