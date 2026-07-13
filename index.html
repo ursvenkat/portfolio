@@ -40,11 +40,11 @@
         <div class="frame">
           <img src="assets/profile.jpg" alt="Portrait of Venkatesh Patte">
         </div>
-        <div class="photo-cap"><span>Fig. 01</span><span>Hyderabad, IN</span></div>
+        <div class="photo-cap"></div>
       </div>
 
       <div>
-        <p class="eyebrow">Sheet 01 — Profile</p>
+       
         <h1>VENKATESH<br>PATTE<small>Full Stack Developer &amp; Workflow Automation Engineer</small></h1>
         <p class="lede">3+ years building and supporting enterprise systems — REST APIs and microservices at Wipro on the FedEx account, now leading n8n automation and SAP-to-PostgreSQL data migration at Kintetsu World Express.</p>
         <div class="cta-row">
@@ -74,11 +74,9 @@
     </div>
 
     <div class="titleblock">
-      <div><p class="k">Name</p><p class="v">Venkatesh Patte</p></div>
-      <div><p class="k">Role</p><p class="v">Full Stack / Automation</p></div>
-      <div><p class="k">Experience</p><p class="v">3+ years</p></div>
-      <div><p class="k">Sheet No.</p><p class="v">01 of 06</p></div>
-      <div><p class="k">Rev.</p><p class="v">2026.07</p></div>
+      <div><p class="k">Location</p><p class="v">Hyderabad, India</p></div>
+      <div><p class="k">Specialization</p><p class="v">Java • Spring Boot • N8N • PostgreSQL • Automation </p></div>
+      <div><p class="k">Experience</p><p class="v">3+ Years</p></div>   
     </div>
   </div>
 </header>
@@ -86,7 +84,6 @@
 <section id="about" class="paper">
   <div class="wrap reveal">
     <div class="section-head">
-      <p class="eyebrow">Sheet 02 — Elevation</p>
       <h2 class="section-title">About</h2>
     </div>
     <div class="about-grid">
@@ -109,7 +106,6 @@
 <section id="skills">
   <div class="wrap reveal">
     <div class="section-head">
-      <p class="eyebrow">Sheet 03 — Legend</p>
       <h2 class="section-title">Skills key</h2>
     </div>
     <div class="legend">
@@ -144,7 +140,6 @@
 <section id="experience" class="paper">
   <div class="wrap reveal">
     <div class="section-head">
-      <p class="eyebrow">Sheet 04 — Route</p>
       <h2 class="section-title">Experience</h2>
     </div>
     <div class="route">
@@ -189,7 +184,6 @@
 <section id="work">
   <div class="wrap reveal">
     <div class="section-head">
-      <p class="eyebrow">Sheet 05 — Assembly</p>
       <h2 class="section-title">Selected work</h2>
     </div>
 
@@ -226,15 +220,73 @@
       </div>
     </div>
 
-    <div class="feature">
-      <p class="eyebrow">Featured build</p>
-      <h3 style="font-family:var(--mono); font-size:21px; color:var(--ink); margin-top:8px;">YINCIO001 — Invoice Migration Pipeline</h3>
-      <p style="max-width:70ch; color:#3F4E5C; margin-top:10px; font-size:14px;">The centerpiece of my DMFW work: an SAP-to-PostgreSQL migration for invoice data. It extracts through a chain of CTEs, stages records idempotently, and posts atomically into six production tables — currently being refactored so the posting node fetches in bulk and prepares data in pure JavaScript, instead of hitting the database once per invoice.</p>
-      <div class="feature-steps">
-        <div><p class="n">01</p><p>Extract from SAP source tables via CTE chains</p></div>
-        <div><p class="n">02</p><p>Stage into A/B-series tables with idempotency guards</p></div>
-        <div><p class="n">03</p><p>Bulk-fetch and prepare in pure JS — no per-row round trips</p></div>
-        <div><p class="n">04</p><p>Post atomically across 6 production tables</p></div>
+    <div class="section-head">
+      <h2 class="section-title">Featured Projects</h2>
+    </div>
+
+    <div class="sheets">
+
+      <div class="sheet">
+        <div class="sheet-body">
+          <h3>YINCIO001 — SAP Invoice Migration Engine</h3>
+          <p>
+            Enterprise SAP-to-PostgreSQL migration workflow developed
+            within DMFW. Handles extraction, staging, transformation,
+            validation, and atomic posting while maintaining data
+            integrity and auditability.
+          </p>
+          <div class="tag-row">
+            <span class="tag-alt">SAP</span>
+            <span class="tag-alt">PostgreSQL</span>
+            <span class="tag-alt">n8n</span>
+            <span class="tag-alt">DMFW</span>
+          </div>
+        </div>
+        
+        <div class="sheet-foot">
+          <span>Enterprise Project</span>
+        </div>
+        
+      </div>
+      <div class="sheet">
+        <div class="sheet-body">
+          <h3>FedEx Logistics API Platform</h3>
+          <p>
+            Built and enhanced REST APIs and Spring Boot microservices
+            supporting logistics operations at Wipro for FedEx.
+            Contributed to feature development, production support,
+            CI/CD pipelines, and cloud deployments.
+          </p>
+          <div class="tag-row">
+            <span class="tag-alt">Java</span>
+            <span class="tag-alt">Spring Boot</span>
+            <span class="tag-alt">Microservices</span>
+            <span class="tag-alt">REST API</span>
+          </div>
+        </div>
+        
+        <div class="sheet-foot">
+          <span>Wipro Project</span>
+        </div>
+        
+      </div>
+      <div class="sheet">
+        <div class="sheet-body">
+          <h3>More Projects Coming Soon</h3>
+          <p>
+            Additional backend, automation, and integration solutions
+            will be published as they are documented and production-ready.
+          </p>
+          <div class="tag-row">
+            <span class="tag-alt">Automation</span>
+            <span class="tag-alt">Integration</span>
+            <span class="tag-alt">Backend</span>
+          </div>
+        </div>
+        
+        <div class="sheet-foot">
+          <span class="stamp">COMING SOON</span>
+        </div>
       </div>
     </div>
   </div>
@@ -248,7 +300,6 @@
   <div class="wrap reveal">
     <div class="contact-node">
       <img class="avatar" src="assets/avatar.jpg" alt="Venkatesh Patte">
-      <p class="eyebrow">Sheet 06 — Terminus</p>
       <h2>Let's connect the next node</h2>
       <p>Open to conversations about full stack development, workflow automation, or data migration work. Reach out below.</p>
       <div class="contact-links">
@@ -261,7 +312,6 @@
         <div><span>Phone —</span> +91 70758 09349</div>
         <div><span>Based in —</span> Hyderabad, India</div>
       </div>
-      <p class="note">Swap the LinkedIn and GitHub placeholders above for your real profile links.</p>
     </div>
   </div>
 </section>
