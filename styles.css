@@ -200,11 +200,15 @@ svg.pipeline{width:100%; height:auto; display:block;}
   margin-top:60px;
   border-top:1px solid rgba(191,219,255,0.25);
   display:grid; grid-template-columns:repeat(5,1fr);
+  max-width:700px;
+  margin-left:auto;
+  margin-right:auto;
 }
 .titleblock div{
   padding:14px 16px;
   border-right:1px solid rgba(191,219,255,0.2);
   font-family:var(--mono);
+  text-align:center;
 }
 .titleblock div:last-child{border-right:none;}
 .titleblock .k{font-size:9px; letter-spacing:.1em; color:var(--line); text-transform:uppercase;}
