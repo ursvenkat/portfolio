@@ -106,7 +106,7 @@ nav ul a:focus-visible{outline:2px solid var(--amber); outline-offset:4px;}
 }
 
 /* ---------- HERO ---------- */
-header.hero{
+ header.hero{
   position:relative;
   min-height:100vh;
   display:flex; flex-direction:column; justify-content:center;
@@ -282,17 +282,12 @@ h2.section-title{
 .stop h3{font-size:18px; margin:6px 0 4px;color:var(--ink);font-family:var(--mono);font-weight:600;}
 .stop .role-sub{font-size:12.5px;color:#2563EB;font-family:var(--mono);margin-bottom:10px; font-weight:600;}
 .stop p{ font-size:14px; color:#334155;max-width:64ch; margin-bottom:6px;}
-.st.stop ul{ margin:10px 0 0 18px;font-size:13.5px;color:#475569;}
+.stop ul{ margin:10px 0 0 18px;font-size:13.5px;color:#475569;}
 .stop ul li{margin-bottom:5px;}
 .stack-row{margin-top:12px; display:flex; flex-wrap:wrap; gap:7px;}
-.tag{
-  font-family:var(--mono); font-size:10px; letter-spacing:.04em; text-transform:uppercase;
-  padding:5px 10px;border:1px solid var(--cyan);color:var(--cyan);background:rgba(0,217,255,.08);border-radius:999px;
-}
-.tag{font-family: var(--mono);font-size: 10px;letter-spacing: .04em;text-transform: uppercase;padding: 5px 10px;border: 1px solid var(--cyan);color: var(--cyan);background: rgba(0,217,255,.08);border-radius: 999px;transition: all .25s ease;
-}
-.tag:hover{background: rgba(0,217,255,.18);box-shadow:0 0 12px rgba(0,217,255,.35);transform: translateY(-2px);
-}
+.tag{font-family:var(--mono); font-size:10px; letter-spacing:.04em; text-transform:uppercase;padding:5px 10px;border:1px solid var(--cyan);color:var(--cyan);background:rgba(0,217,255,.08);border-radius:999px;}
+.tag{font-family: var(--mono);font-size: 10px;letter-spacing: .04em;text-transform: uppercase;padding: 5px 10px;border: 1px solid var(--cyan);color: var(--cyan);background: rgba(0,217,255,.08);border-radius: 999px;transition: all .25s ease;}
+.tag:hover{background: rgba(0,217,255,.18);box-shadow:0 0 12px rgba(0,217,255,.35);transform: translateY(-2px);}
 
 /* PROJECT sheets */
 .sheets{display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:24px;}
