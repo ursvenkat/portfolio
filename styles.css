@@ -82,8 +82,8 @@ nav{
   width:34px; height:34px; border-radius:50%; object-fit:cover;
   border:2px solid var(--amber);
 }
-.brand .mark{font-family:var(--mono); font-weight:700; letter-spacing:.04em; font-size:14px;}
-.brand .mark span{color:var(--amber);}
+.brand .mark{font-family:var(--mono);font-weight:700; letter-spacing:.08em;font-size:15px;color:#ffffff;}
+.brand .mark span{color:#00D9FF;}
 nav ul{list-style:none; display:flex; gap:24px;}
 nav ul a{
   font-family:var(--mono); font-size:12px; letter-spacing:.1em;
